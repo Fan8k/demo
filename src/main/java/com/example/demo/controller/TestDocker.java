@@ -15,6 +15,6 @@ public class TestDocker {
 
     @GetMapping("/test")
     public String test() {
-        return "远程docker访问成功！！！";
+        return "看看配置是否成功，远程docker访问成功！！！";
     }
 }
