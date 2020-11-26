@@ -67,7 +67,8 @@
                         <imageTag>latest</imageTag>
                     </imageTags>
                     <!--指定远程 docker api地址-->
-                    <dockerHost>http://47.101.37.250:2375</dockerHost>
+                    <!--阿里云内网和外网的问题127.0.0.1-->
+                    <dockerHost>http://127.0.0.1:2375</dockerHost>
                     <!-- 这里是复制 jar 包到 docker 容器指定目录配置 -->
                     <resources>
                         <resource>
@@ -84,3 +85,9 @@
     </build>
 
 </project>
+
+<!--        docker stop fan/demo-->
+<!--        docker rm fan/demo-->
+<!--        docker rmi fan/demo-->
+
+<!--        docker run -d -p 8089:8089 fan/demo-->
