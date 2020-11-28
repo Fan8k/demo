@@ -14,6 +14,6 @@ public class TestDocker {
 
     @GetMapping("/test")
     public String test() {
-        return "自动化部署666666，远程docker访问成功！！！";
+        return "自动化部署888888，远程docker访问成功！！！";
     }
 }
